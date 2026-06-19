@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Dudley Alojado — Backend Developer</title>
+  <meta name="description" content="Portfolio of Ian Dudley Alojado, aspiring backend developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">~/ida<span class="cursor">_</span></span>
+      <nav class="nav-links">
+        <a href="#projects">[01] projects</a>
+        <a href="#experience">[02] experience</a>
+        <a href="#skills">[03] skills</a>
+        <a href="#education">[04] education</a>
+        <a href="#contact">[05] contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-top">
+        <div class="hero-photo">
+          <img src="profile.jpg" alt="Ian Dudley Alojado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hero-photo-fallback">[ photo ]</div>
+        </div>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">guest@portfolio:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">guest@portfolio</span>:<span class="path">~</span>$ whoami</p>
+          <p class="output-line"><span class="accent">Ian Dudley Alojado</span></p>
+          <p><span class="prompt">guest@portfolio</span>:<span class="path">~</span>$ cat role.txt</p>
+          <p class="output-line">&gt; Aspiring Backend Developer<span class="cursor">_</span></p>
+          <p><span class="prompt">guest@portfolio</span>:<span class="path">~</span>$ cat summary.txt</p>
+          <p class="output-line summary-line">
+            I build RESTful APIs, authentication systems, and RBAC-based
+            authorization using JavaScript, MySQL, and Sequelize. I care
+            about writing backend systems that are secure, reliable, and
+            built to scale.
+          </p>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/IanDude" target="_blank" rel="noopener" class="btn">$ github</a>
+        <a href="#" target="_blank" rel="noopener" class="btn">$ linkedin</a>
+        <a href="mailto:iandudley012@gmail.com" class="btn">$ email</a>
+        <a href="resume.pdf" download class="btn btn-fill">$ ./resume.pdf</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-label">// 01 — projects</p>
+      <h2><span class="bracket">&lt;</span>Selected work<span class="bracket">/&gt;</span></h2>
+
+      <article class="project-card">
+        <div class="project-thumb">
+          <span class="thumb-placeholder">[ screenshot.png ]</span>
+          <div class="thumb-glow"></div>
+        </div>
+        <div class="project-body">
+          <h3>D-Crypt Battle</h3>
+          <p class="project-meta">$ school-team-project · 4 members · 2025</p>
+          <p>
+            A web-based cryptography game built with HTML, CSS, JavaScript, and
+            Babylon.js, featuring single-player and real-time multiplayer modes.
+            I built the techniques section that animates how the Caesar,
+            Vigenère, Transposition, and AES ciphers encrypt and decrypt text —
+            turning abstract algorithms into something visual and easy to follow.
+          </p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Babylon.js</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" class="link-arrow">live_demo &gt;</a>
+            <a href="#" target="_blank" rel="noopener" class="link-arrow">view_source &gt;</a>
+          </div>
+        </div>
+      </article>
+
+      <p class="more-projects-note">// more_projects.length === "coming_soon"</p>
+    </section>
+
+    <section id="experience" class="section">
+      <p class="section-label">// 02 — experience</p>
+      <h2><span class="bracket">&lt;</span>Experience<span class="bracket">/&gt;</span></h2>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h3>Backend Developer Intern</h3>
+          <span class="exp-date">[ 2026-02 — 2026-05 ]</span>
+        </div>
+        <p class="exp-org">Dynamic Global Soft Inc. · Taytay, Rizal</p>
+        <p>
+          Worked within an existing backend boilerplate, implementing CSRF
+          protection, CORS, and Helmet security headers, designing a
+          Role-Based Access Control (RBAC) system with Sequelize, and building
+          a full password recovery flow with token-based reset links. Also
+          contributed to a client project for a government system, building a
+          script to compile geographic data by region, province, municipality,
+          and barangay.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h3>Operations Assistant</h3>
+          <span class="exp-date">[ dates ]</span>
+        </div>
+        <p class="exp-org">Worldbex Services International · World Trade Center, Pasay City</p>
+        <p>
+          Supported event operations for two large-scale exhibitions, MIAS and
+          MAFBEX, each running one week. Coordinated with 50+ exhibitors during
+          ingress and egress, and resolved visitor concerns on the spot to keep
+          things running smoothly.
+        </p>
+      </div>
+    </section>
+
+    <div class="split">
+      <section id="skills" class="section split-col">
+        <p class="section-label">// 03 — skills</p>
+        <h2><span class="bracket">&lt;</span>Skills<span class="bracket">/&gt;</span></h2>
+        <div class="skill-group">
+          <p class="skill-label">$ languages</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">$ frameworks</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Babylon.js</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">$ tools</p>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Sequelize</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section split-col">
+        <p class="section-label">// 04 — education</p>
+        <h2><span class="bracket">&lt;</span>Education<span class="bracket">/&gt;</span></h2>
+        <h3>BS Computer Science</h3>
+        <p class="exp-org">Taguig City University · Class of 2026</p>
+        <ul class="edu-list">
+          <li>Graduated with Latin Honors</li>
+          <li>1st Runner-Up, TCU Systems' Fair 2025</li>
+          <li>Thesis: D-Crypt Battle — a gamified cryptography learning platform using Levenshtein Distance and Random Forest algorithms</li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <p class="section-label">// 05 — contact</p>
+    <p class="footer-line">$ status: <span class="accent">open_to_opportunities</span><span class="cursor">_</span></p>
+    <div class="footer-links">
+      <a href="mailto:iandudley012@gmail.com">iandudley012@gmail.com</a>
+      <a href="https://github.com/IanDude" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
 
   <header class="nav">
     <div class="nav-inner">
-      <span class="nav-logo">~/ida<span class="cursor">_</span></span>
+      <a href="#hero" style="text-decoration: none;"><span class="nav-logo">~/ida<span class="cursor">_</span></span></a>
       <nav class="nav-links">
         <a href="#projects">[01] projects</a>
         <a href="#experience">[02] experience</a>
@@ -29,7 +30,7 @@
 
   <main>
 
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-top">
         <div class="hero-photo">
           <img src="profile.jpg" alt="Ian Dudley Alojado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
@@ -48,17 +49,19 @@
           <p class="output-line">&gt; Aspiring Backend Developer<span class="cursor">_</span></p>
           <p><span class="prompt">guest@portfolio</span>:<span class="path">~</span>$ cat summary.txt</p>
           <p class="output-line summary-line">
-            I build RESTful APIs, authentication systems, and RBAC-based
-            authorization using JavaScript, MySQL, and Sequelize. I care
-            about writing backend systems that are secure, reliable, and
-            built to scale.
+            I'm a backend developer who likes untangling how systems work under the hood, 
+            building RESTful APIs, designing authentication and RBAC systems, and working 
+            with MySQL and Sequelize to keep data secure and reliable. I'm currently looking 
+            to grow as a developer who builds things that scale, and that people can trust.
           </p>
         </div>
       </div>
       <div class="hero-links">
         <a href="https://github.com/IanDude" target="_blank" rel="noopener" class="btn">$ github</a>
-        <a href="#" target="_blank" rel="noopener" class="btn">$ linkedin</a>
-        <a href="mailto:iandudley012@gmail.com" class="btn">$ email</a>
+        <a href="https://www.linkedin.com/in/ian-dudley-alojado-85053b392" target="_blank" rel="noopener" class="btn">$ linkedin</a>
+        <a href="#" class="btn" id="emailBtn" onclick=emailClick(event)>
+          <span >$ email</span>
+        </a>
         <a href="resume.pdf" download class="btn btn-fill">$ ./resume.pdf</a>
       </div>
     </section>
@@ -118,7 +121,7 @@
         </p>
       </div>
 
-      <div class="exp-item">
+      <!-- <div class="exp-item">
         <div class="exp-head">
           <h3>Operations Assistant</h3>
           <span class="exp-date">[ dates ]</span>
@@ -130,7 +133,7 @@
           ingress and egress, and resolved visitor concerns on the spot to keep
           things running smoothly.
         </p>
-      </div>
+      </div> -->
     </section>
 
     <div class="split">
@@ -142,28 +145,32 @@
           <div class="tags">
             <span class="tag">JavaScript</span>
             <span class="tag">Java</span>
-            <span class="tag">SQL</span>
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-label">$ frameworks</p>
+          <p class="skill-label">$ frameworks and libraries</p>
           <div class="tags">
             <span class="tag">React</span>
-            <span class="tag">Node.js</span>
             <span class="tag">Express.js</span>
+            <span class="tag">Sequelize</span>
             <span class="tag">Babylon.js</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-label">$ tools</p>
+          <p class="skill-label">$ databases</p>
           <div class="tags">
-            <span class="tag">Git</span>
             <span class="tag">MySQL</span>
-            <span class="tag">Sequelize</span>
             <span class="tag">MongoDB</span>
             <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">$ tools and platforms</p>
+          <div class="tags">
+            <span class="tag">Git/Github</span>
+            <span class="tag">Node.js</span>
           </div>
         </div>
       </section>

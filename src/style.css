@@ -13,6 +13,10 @@
   --mono: 'JetBrains Mono', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -57,7 +61,10 @@ a:hover { text-decoration: underline; }
 }
 @keyframes blink { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
-  .cursor { animation: none; }
+  .cursor { animation: none; };
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 .bracket { color: var(--accent-dim); font-weight: 400; }
@@ -131,10 +138,11 @@ h2 {
 .hero-top {
   display: flex;
   margin-bottom: 24px;
+  justify-content: center;
 }
 .hero-photo {
-  width: 88px;
-  height: 88px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   border: 2px solid var(--accent-dim);
   box-shadow: 0 0 24px var(--accent-glow);

@@ -1,6 +1,6 @@
-function emailClick(event) {
+function emailClick(event, number) {
   event.preventDefault();
-  const element = document.querySelector("#emailBtn");
+  const element = document.querySelector(`#emailBtn${number}`);
   const email = "iandudley012@gmail.com";
 
   navigator.clipboard.writeText(email).then(() => {

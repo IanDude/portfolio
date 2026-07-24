@@ -165,8 +165,8 @@ h2 {
   justify-content: center;
 }
 .hero-photo {
-  width: 128px;
-  height: 128px;
+  width: 256px;
+  height: 256px;
   border-radius: 50%;
   border: 2px solid var(--accent-dim);
   box-shadow: 0 0 24px var(--accent-glow);
@@ -246,8 +246,9 @@ h2 {
 }
 .summary-line {
   color: var(--ink-soft);
-  max-width: 560px;
+  max-width: 100%;
   font-size: 14px;
+  text-align: justify;
 }
 
 .hero-links {
